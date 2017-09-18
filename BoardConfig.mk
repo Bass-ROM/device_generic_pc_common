@@ -80,7 +80,7 @@ TARGET_HARDWARE_3D := true
 endif
 
 BOARD_KERNEL_CMDLINE := root=/dev/ram0 androidboot.selinux=permissive $(if $(filter true,$(TARGET_USES_64_BIT_BINDER)),,vmalloc=192M)
-TARGET_KERNEL_DIFFCONFIG := device/generic/common/selinux_diffconfig
+TARGET_KERNEL_DIFFCONFIG := device/generic/pc_common/selinux_diffconfig
 
 COMPATIBILITY_ENHANCEMENT_PACKAGE := true
 PRC_COMPATIBILITY_PACKAGE := true

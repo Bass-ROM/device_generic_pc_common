@@ -11,7 +11,7 @@
 ifneq ($(TARGET_NO_KERNEL),true)
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 
-KERNEL_DIR ?= kernel
+KERNEL_DIR ?= kernel/pc_common
 
 ifneq ($(filter x86%,$(TARGET_ARCH)),)
 TARGET_KERNEL_ARCH ?= $(TARGET_ARCH)

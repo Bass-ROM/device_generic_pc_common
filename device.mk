@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-PRODUCT_DIR := $(dir $(lastword $(filter-out device/common/%,$(filter device/%,$(ALL_PRODUCTS)))))
+PRODUCT_DIR := $(dir $(lastword $(filter-out device/pc_common/%,$(filter device/%,$(ALL_PRODUCTS)))))
 
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.ril.hsxpa=1 \
@@ -98,7 +98,7 @@ $(call inherit-product-if-exists,external/tslib/tslib.mk)
 $(call inherit-product-if-exists,hardware/libaudio/alsa.mk)
 
 # Get GPS configuration
-$(call inherit-product-if-exists,device/common/gps/gps_as.mk)
+$(call inherit-product-if-exists,device/pc_common/gps/gps_as.mk)
 
 # Get the hardware acceleration libraries
 $(call inherit-product-if-exists,$(LOCAL_PATH)/gpu/gpu_mesa.mk)
