@@ -15,4 +15,4 @@
 #
 
 $(call inherit-product,$(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product,$(LOCAL_PATH)/x86.mk)
+$(call inherit-product,$(LOCAL_PATH)/pc_x86.mk)
