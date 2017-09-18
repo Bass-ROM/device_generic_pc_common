@@ -17,8 +17,8 @@ include $(CLEAR_VARS)
 
 ifneq ($(PC_BUILD),)
   $(shell cp $(LOCAL_PATH)/kernel_makefiles/pc_kernel.mk $(LOCAL_PATH)/build/tasks/kernel.mk)
-else
-  $(shell cp $(LOCAL_PATH)/kernel_makefiles/device_kernel.mk $(LOCAL_PATH)/build/tasks/kernel.mk)
+else 
+	
 endif
   
 PRODUCT_DIR := $(dir $(lastword $(filter-out device/pc_common/%,$(filter device/%,$(ALL_PRODUCTS)))))
