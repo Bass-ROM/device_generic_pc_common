@@ -16,7 +16,7 @@
 include $(CLEAR_VARS)
 
 ifneq ($(PC_BUILD),)
-  $(shell cp $(LOCAL_PATH)/kernel_makefiles/pc_kernel.mk $(LOCAL_PATH)/build/tasks/kernel.mk)
+  $(shell cp $(LOCAL_PATH)/kernel_makefiles/pc_kernel.mk $(LOCAL_PATH)/build/tasks/kernel.mk && cp $(LOCAL_PATH)/kernel_makefiles/envsetup.sh $(LOCAL_PATH)/build/envsetup.sh)
 else 
 	
 endif
